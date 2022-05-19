@@ -6,7 +6,7 @@ const Home = () => {
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
-        const url = "http://localhost:4000/clientes";
+        const url = import.meta.env.VITE_API_URL;
         const response = await fetch(url);
         const data = await response.json();
         setClientes(data);
@@ -21,7 +21,7 @@ const Home = () => {
     const eliminar = confirm("Deseas eliminar este cliente?");
     if (eliminar) {
       try {
-        const url = `http://localhost:4000/clientes/${id}`;
+        const url = `${import.meta.env.VITE_API_URL}/${id}`;
         const response = await fetch(url, {
           method: "DELETE",
         });

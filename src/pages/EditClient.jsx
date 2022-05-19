@@ -8,7 +8,7 @@ const EditClient = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const url = `http://localhost:4000/clientes/${id}`;
+    const url = `${import.meta.env.VITE_API_URL}/${id}`;
     const getClient = async () => {
       try {
         const response = await fetch(url);
