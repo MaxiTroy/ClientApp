@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "nombre": "Maxi",
+      "empresa": "M7",
+      "email": "prueba@m7.com",
+      "telefono": "1234567",
+      "notas": "lalalala",
+      "id": 2
+    },
+    {
+      "nombre": "Otro",
+      "empresa": "Otra",
+      "email": "otr@gmail.com",
+      "telefono": "123465879",
+      "notas": "",
+      "id": 3
+    },
+    {
+      "nombre": "lala act",
+      "empresa": "lala2",
+      "email": "lala@lala.com",
+      "telefono": "1384945671",
+      "notas": "",
+      "id": 4
+    }
+  ]
+}
